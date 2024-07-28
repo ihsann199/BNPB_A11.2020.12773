@@ -1,0 +1,72 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Menetapkan font default untuk seluruh dokumen */
+  color-scheme: light dark; /* Menentukan skema warna untuk mendukung mode terang dan gelap */
+  color: rgba(255, 255, 255, 0.87); /* Warna teks default */
+  background-color: #242424; /* Warna latar belakang default */
+
+  font-synthesis: none; /* Menonaktifkan sintesis font untuk menjaga konsistensi */
+  text-rendering: optimizeLegibility; /* Meningkatkan keterbacaan teks */
+  -webkit-font-smoothing: antialiased; /* Menghaluskan tepi font pada Webkit */
+  -moz-osx-font-smoothing: grayscale; /* Menghaluskan tepi font pada Firefox */
+}
+
+body {
+  margin: 0; /* Menghapus margin default */
+  min-width: 320px; /* Lebar minimal untuk mendukung perangkat kecil */
+  min-height: 100vh; /* Tinggi minimal 100% viewport height untuk memastikan tubuh penuh layar */
+  color: rgba(255, 255, 255, 0.87); /* Warna teks default */
+  display: flex; /* Menggunakan flexbox untuk tata letak anak elemen */
+  flex-direction: column; /* Mengatur tata letak anak elemen secara vertikal */
+}
+
+h1 {
+  font-size: 3.2em; /* Ukuran font untuk elemen h1 */
+  line-height: 1.1; /* Tinggi baris untuk elemen h1 */
+}
+
+button {
+  border-radius: 8px; /* Membuat sudut tombol membulat */
+  border: 1px solid transparent; /* Batas transparan default */
+  padding: 0.6em 1.2em; /* Padding di sekitar teks tombol */
+  font-size: 1em; /* Ukuran font untuk tombol */
+  font-weight: 500; /* Berat font untuk tombol */
+  font-family: inherit; /* Menggunakan font yang diwariskan dari elemen induk */
+  background-color: #1a1a1a; /* Warna latar belakang tombol */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat melayang di atas tombol */
+  transition: border-color 0.25s; /* Animasi transisi untuk perubahan warna batas */
+}
+
+button:hover {
+  border-color: #646cff; /* Warna batas saat tombol dilayang */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* Garis luar tombol saat mendapat fokus */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547; /* Warna teks default untuk mode terang */
+    background-color: #ffffff; /* Warna latar belakang default untuk mode terang */
+  }
+
+  a:hover {
+    color: #747bff; /* Warna teks tautan saat dilayang di mode terang */
+  }
+
+  button {
+    background-color: #f9f9f9; /* Warna latar belakang tombol untuk mode terang */
+  }
+}
+
+.navbar-container {
+  display: flex; /* Menggunakan flexbox untuk tata letak anak elemen */
+  flex-direction: column; /* Mengatur tata letak anak elemen secara vertikal */
+  min-height: 100vh; /* Tinggi minimal 100% viewport height untuk memastikan navbar penuh layar */
+}
+
+.main-content {
+  flex: 1; /* Membuat elemen ini fleksibel dan mengambil ruang yang tersedia */
+  padding: 1em; /* Padding di sekitar konten utama */
+}
